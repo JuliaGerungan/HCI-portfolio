@@ -1,0 +1,265 @@
+html {
+    box-sizing: border-box;
+}
+*, 
+*:before,
+*:after{
+  box-sizing: inherit;
+}
+body{
+  margin: 0px 0px 0px 0px;
+}
+/*header*/
+header{
+  height: 96px;
+}
+#logoHeader{
+  text-align: center;
+  float: left;
+  width: 33%;
+}
+figure{
+  margin-bottom: 0px;
+}
+#logoHeader img{
+  width: 64px;
+}
+#nav{
+  padding-left: 8px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  float: left;
+  width: 33%;
+  height: 32px;
+}
+#nav li{
+  display: inline;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+#nav a{
+  font-family: Avenir, sans-serif;
+  font-size: 20px;
+  color: #E6D1BE;
+  text-decoration: none;
+}
+#nav a:hover{
+  text-shadow: 2px 4px 3px #dddddd;
+}
+#nav a:active{
+  color: #000000;
+}
+/*intro*/
+#intro{
+  background-image: url("../images/laptop.png");
+  background-size: cover;
+  margin-bottom: 0px;
+  height: 720px;
+  padding-top: 240px;
+  color: #ffffff;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+/*fadeIn animatie titel*/
+@keyframes fadeInTitle{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+/*fadeIn animatie ondertitel en tekst*/
+@keyframes fadeInPortfolioKnop{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+#intro h1{
+  animation: fadeInTitle 1.5s ease;
+}
+#intro h2, #intro p{
+  animation: fadeInPortfolioKnop 4s ease;
+}
+/*knop naar portfolio*/
+#knopPortfolio{
+  text-decoration: none;
+  position: absolute;
+  width: 300px;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border: none;
+  font-size: 24px;
+  font-family: Avenir;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+
+  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05);
+    animation: fadeInPortfolioKnop 2s ease;
+}
+#knopPortfolio span:after {
+  content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -30px;
+    transition: 0.5s;
+}
+#knopPortfolio:hover span{
+    padding-right: 25px;
+}
+#knopPortfolio:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+#knopPortfolio:active{
+  color: #000000;
+}
+h1{
+  text-align: center;
+  font-size: 120px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: didot;
+  font-weight: lighter;
+}
+h2{
+  font-family: Avenir; 
+  font-weight: lighter;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: #E6D1BE;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+p{
+  font-family: Avenir;
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: justify;
+  width: 50%;
+  padding-bottom: 16px;
+  color: #ffffff;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+/*grid container*/
+#grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  background-color: #000000;
+  font-family: Avenir, sans-serif;
+  font-size: 20px;
+  margin-top: 0px;
+}
+.grid-item{
+  height: 200px;
+  padding: 16px 8px 8px 8px;
+}
+#grid-container a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;  
+}
+/* Change the color of links on hover */
+#grid-container a:hover {
+  background-color: #E6D1BE;
+}
+
+/* Add a color to the active/current link */
+#grid-container a.active {
+  background-color: #cccccc;
+  color: white;
+}
+#wearables{
+  display: flex;
+  grid-column: 1;
+  grid-row: 1;
+}
+#playfulInteractions{
+  display: flex;
+  grid-column: 2;
+  grid-row: 1;
+}
+#artificalCreatures{
+  display: flex;
+  grid-column: 3;
+  grid-row: 1;
+}
+#arVr{
+  display: flex;
+  grid-column: 4;
+  grid-row: 1;
+}
+#arduino{
+  display: flex;
+  grid-column: 1;
+  grid-row: 2;
+}
+#vrEvironments{
+  display: flex;
+  grid-column: 2;
+  grid-row: 2;
+}
+#computerVision{
+  display: flex;
+  grid-column: 3;
+  grid-row: 2;
+}
+#excursion{
+  display: flex;
+  grid-column: 1;
+  grid-row: 3;
+}
+#labWeeks{
+  display: flex;
+  grid-column: 2;
+  grid-row: 3;
+}
+/*Over mij*/
+.overMij figure{
+  width: 35%;
+  float: left;
+  margin-top: 0px;
+}
+#profielFoto{
+  width: 100%;
+  border-radius: 80px;
+ 
+}
+#overMij{
+  width: 90%;
+  margin-top: 56px;
+  margin-bottom: 56px;
+  text-align: justify;
+}
+#overMij p{
+  color: #000000;
+  text-shadow: none;
+  display: inline;
+}
+#Hi{
+  font-family: Didot, serif;
+  font-style: italic;
+  font-size: 48px;
+  margin-right: 8px;
+  margin-bottom: 0px;
+}
+.overMij p{
+  font-family: Avenir;
+  font-size: 20px;
+  line-height: 24px;
+}
+.socialeMediaLinks{
+  margin: 32px 32px 32px 32px;
+  width: 32px;
+}
