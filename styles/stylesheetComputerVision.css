@@ -1,0 +1,30 @@
+h3{
+	margin-top: 8px;
+}
+#opdracht{
+	width: 100%;
+	height: 500px;
+}
+.code img{
+	margin-left: 120px;
+	height: 240px;
+	float: left;
+}
+figure{
+	margin-left: 0px;
+	float: left;
+}
+#compvis1 img, #compvis2 img{
+	height: 240px;
+}
+#compvis3{
+	height: 240px;
+	margin-top: 16px;
+}
+#liveCamTestCode img{
+	margin-left: 120px;
+	width: 530px;
+}
+#liveCamTest img{
+	height: 240px;
+}
