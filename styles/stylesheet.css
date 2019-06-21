@@ -11,7 +11,7 @@ body{
 }
 /*header*/
 header{
-  height: 96px;
+  height: 80px;
 }
 #logoHeader{
   text-align: center;
@@ -22,11 +22,11 @@ figure{
   margin-bottom: 0px;
 }
 #logoHeader img{
-  width: 64px;
+  width: 48px;
 }
 #nav{
   padding-left: 8px;
-  margin-top: 60px;
+  margin-top: 48px;
   margin-bottom: 0px;
   float: left;
   width: 33%;
@@ -34,12 +34,12 @@ figure{
 }
 #nav li{
   display: inline;
-  margin-left: 4px;
-  margin-right: 4px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 #nav a{
   font-family: Avenir, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   color: #E6D1BE;
   text-decoration: none;
 }
@@ -79,9 +79,12 @@ figure{
 }
 #intro h1{
   animation: fadeInTitle 1.5s ease;
+  font-style: italic;
+  font-size: 120px;
 }
 #intro h2, #intro p{
   animation: fadeInPortfolioKnop 4s ease;
+  font-size: 18px;
 }
 /*knop naar portfolio*/
 #knopPortfolio{
@@ -156,7 +159,6 @@ p{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 
-  background-color: #000000;
   font-family: Avenir, sans-serif;
   font-size: 20px;
   margin-top: 0px;
@@ -167,12 +169,15 @@ p{
 }
 #grid-container a {
   color: #ffffff;
+  font-weight: bolder;
   text-decoration: none;
-  font-size: 18px;  
+  font-size: 20px;  
+  text-shadow: 1px 1px 8px #000000;
 }
 /* Change the color of links on hover */
 #grid-container a:hover {
   background-color: #E6D1BE;
+  background-image: none;
 }
 
 /* Add a color to the active/current link */
@@ -184,57 +189,88 @@ p{
   display: flex;
   grid-column: 1;
   grid-row: 1;
+  background-image: url('../images/omslagen/wearablesOmslag.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 #playfulInteractions{
   display: flex;
   grid-column: 2;
   grid-row: 1;
+  background-image: url('../images/omslagen/playfulInteractionOmslag.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#artificalCreatures{
+#artificialCreatures{
   display: flex;
   grid-column: 3;
   grid-row: 1;
+  background-image: url('../images/omslagen/artificialCreaturesOmslag.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #arVr{
   display: flex;
   grid-column: 4;
   grid-row: 1;
+  background-image: url('../images/omslagen/arvrOmslag.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #arduino{
   display: flex;
   grid-column: 1;
   grid-row: 2;
+  background-image: url('../images/omslagen/arduinoOmslag.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #vrEvironments{
   display: flex;
   grid-column: 2;
   grid-row: 2;
+  background-image: url('../images/omslagen/vrEvironmentsOmslag.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #computerVision{
   display: flex;
   grid-column: 3;
   grid-row: 2;
+  background-image: url('../images/omslagen/computerVisionOmslag.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #excursie{
   display: flex;
   grid-column: 1;
   grid-row: 3;
+  background-image: url('../images/omslagen/excursieOmslag.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #labWeken{
   display: flex;
   grid-column: 2;
   grid-row: 3;
+  background-image: url('../images/omslagen/labwekenOmslag.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*Over mij*/
+#overmijPagina{
+  margin-top: 64px;
+}
 .overMij figure{
   width: 35%;
   float: left;
   margin-top: 0px;
+  height: 700px;
 }
 #profielFoto{
   width: 100%;
   border-radius: 80px;
- 
 }
 #overMij{
   width: 90%;
@@ -242,7 +278,7 @@ p{
   margin-bottom: 56px;
   text-align: justify;
 }
-#overMij p{
+#overMij p, #hetVak p{
   color: #000000;
   text-shadow: none;
   display: inline;
@@ -256,10 +292,62 @@ p{
 }
 .overMij p{
   font-family: Avenir;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 32px;
+}
+#cursief{
+  font-family: Didot, serif;
+  font-style: italic;
+  font-size: 32px;
+}
+#cursief p{
+  margin-bottom: 32px;
+}
+#hetVak{
+  width: 90%;
+  margin: 0 auto;
+  text-align: justify;
+  margin-top: 0px;
 }
 .socialeMediaLinks{
   margin: 32px 32px 32px 32px;
   width: 32px;
+}
+.portfolio{
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #d1a1a1;
+    margin-top: 0px;
+/*    padding-bottom: 16px;*/
+/*    background-color: #d1a1a1;*/
+}
+.grid-item-box{
+  height: 300px;
+  position:relative;
+  display:inline-block;
+}
+/*media queries*/
+@media only screen and (min-width: 320px) and (max-width: 767px){
+  .overMij figure{
+  width: 100%;
+  margin-left: 56px;
+  height: 700px;
+}
+#profielFoto{
+  border-radius: 80px;
+}
+#overMij{
+  width: 100%;
+  margin-top: 56px;
+  margin-bottom: 56px;
+  text-align: justify;
+  margin-left: 0px; 
+  margin-right: 0px;
+}
+@media only screen and (min-width: 1600px) and (max-width: 1920px){
+
+ .overMij figure{
+ height: 1600px;
+}
 }

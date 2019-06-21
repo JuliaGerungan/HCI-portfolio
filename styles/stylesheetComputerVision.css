@@ -1,9 +1,12 @@
+#logoHeader figure{
+	width: 100%;
+}
 h3{
 	margin-top: 8px;
 }
 #opdracht{
 	width: 100%;
-	height: 500px;
+	height: 640px;
 }
 .code img{
 	margin-left: 120px;
@@ -27,4 +30,12 @@ figure{
 }
 #liveCamTest img{
 	height: 240px;
+}
+#hiro img{
+	margin-left: 120px;
+	width: 480px;
+}
+#somethingCool{
+	margin-left: 120px;
+	width: 480px;
 }

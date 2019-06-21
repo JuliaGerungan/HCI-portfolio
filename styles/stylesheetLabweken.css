@@ -1,0 +1,10 @@
+.brainstorm, .tweedePrototype, #nektasje, #poster{
+	width: 200px;
+}
+.arduino, .eerstePrototype, .scrumboard6Juni, .MP3Shield, .expositie, .expoUitleg{
+	margin-top: 16px;
+	width: 400px;
+}
+#blueprints{
+	width: 600px;
+}

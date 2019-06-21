@@ -3,8 +3,9 @@
 	width: 100%;
 }
 #backView, #shield{
-	width: 360px;
-	margin-right: 8px;
+	width: 40%;
+	margin-left: 80px;
+	margin-bottom: 32px;
 	float: left;
 /*	box-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 */}
